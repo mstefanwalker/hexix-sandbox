@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://hexagon.gd" type="Script" id=1]
+
+[node name="hexagon" type="StaticBody2D"]
+input_pickable = true
+script = ExtResource( 1 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( -13.9982, -22.7341, -25.6454, 0.56028, -13.6746, 23.5312, 15.1199, 23.8547, 27.7377, 0.56028, 15.1199, -23.3812 )
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+color = Color( 0.580392, 0.580392, 0.580392, 1 )
+antialiased = true
+polygon = PoolVector2Array( -13.9982, -22.7341, -25.6454, 0.56028, -13.6746, 23.5312, 15.1199, 23.8547, 27.7377, 0.56028, 15.1199, -23.3812 )
